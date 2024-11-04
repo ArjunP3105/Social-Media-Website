@@ -1,0 +1,21 @@
+{% extends "network/layout.html" %}
+
+{% block body %}
+    <div id ="all">
+    </div>
+    {% if user.is_authenticated %}
+        <div class = "posting">
+            <form action="{% url 'posts' %}" method="POST">
+                {% csrf_token %}
+                <textarea class = "textarea" name = "comment"  placeholder="New post.." cols= 182px rows = 2px></textarea>
+                <input  type = "submit" value = "Post">
+            </form>
+        </div>
+    {% endif %}
+    <div class="userpage"></div>
+    <div class = "allposts"></div>
+    <div class="userposts"></div>
+    <div class="following_post"></div>
+    <div class="pagination"></div>  
+
+{% endblock %}

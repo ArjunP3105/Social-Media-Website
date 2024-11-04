@@ -1,0 +1,296 @@
+#n1{
+    text-align: center;
+    font-family:sans-serif;
+}
+.textarea{
+    padding: 1em;
+    border-radius: 10px;
+    align-items: center;
+    background-color:rgba(255, 255, 255, 0.516);
+    border: 2px transparent;
+    width:100%;
+    
+}
+
+#h2{
+    left: 100px;
+    font-family: sans-serif;
+}
+
+input[type = "submit"]{
+    border: 2px solid transparent;
+    border-radius: 5px;
+    width: 40px;
+    background: linear-gradient(white, white) padding-box,  linear-gradient(15deg, #13547a 0%, #80d0c7 100%) border-box;
+    margin-left: 10px;
+    padding: 5px;
+    width: 100px;
+    transition: transform 0.5s ;
+    color: #13547a;
+}
+
+input[type = "submit"]:hover{
+    transform: translateY(-2px)translateZ(0);
+    color: white;
+    background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%) padding-box,  linear-gradient(15deg, #13547a 0%, #80d0c7 100%) border-box;
+}
+
+.posting{
+    color: #13547a;
+    border: 0.5px solid rgb(188, 186, 186);
+    border-radius: 10px;
+    margin-left: 13px;
+    padding: 5px;
+    width: 98%;
+    background-color: rgb(255,255,255,.1) ;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.textarea:focus
+{
+    outline:0px;   
+}
+
+#all{
+margin-left: 14px;
+}
+
+.headerpost{
+    margin-left:14px;
+    
+}
+
+#postdate{
+    position: relative;
+    top: -30px;
+    left: 70px;
+}
+
+#postcomment,.postcomment,#userpostcomment{
+    cursor: pointer;
+    display: flex;
+    margin-left: 14px;
+    position:absolute;
+    top: 40px;
+}
+
+.postinner,.userpostinner{
+    cursor: pointer;
+    display: flex;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    width:1000px;
+    height:100px;
+    position: relative;
+    justify-self: center;
+    align-items: center;
+    margin: 3px;
+    background: linear-gradient(white,white) padding-box,  linear-gradient(15deg, #13547a 0%, #80d0c7 100%) border-box;
+    transition: transform 0.5s ease;
+
+}
+
+.postinner:hover,.userpostinner:hover{
+    transform: scale(1.03)translateZ(0);
+
+}
+
+.like,.userlike,.followinglike{
+
+    cursor: pointer;
+    display: flex;
+    left: 14px;
+    position:absolute;
+    top: 65px;
+    transition: transform 0.4s ease ;
+    transform-origin: center center;
+    z-index: 1;
+}
+
+.like:hover,.userlike:hover,.followinglike:hover{
+   
+    transform: scale(1.25)translateZ(0);
+    
+}
+
+
+.centeruser{
+    cursor: pointer;
+    position: relative;
+    justify-items: center;
+}
+
+#userprofile{
+    cursor: pointer;
+    height: 200px;
+    margin:-30px;
+}
+
+#followers{
+    position: relative;
+    left: -50px;
+}
+
+#following{
+    position: relative;
+    top: -40px;
+    right: -50px;
+}
+
+#follow-btn,#unfollow-btn{
+    width: 150px ;
+    padding:7px;
+    position: relative;
+    top : -30px;
+    border-radius: 10px;
+    outline: transparent;
+    border: 2px transparent solid;
+    background: linear-gradient(white,white) padding-box,  linear-gradient(15deg, #13547a 0%, #80d0c7 100%) border-box;
+    color: #13547a;
+    transition: transform 0.3s ease;
+}
+#follow-btn:hover{
+    transform:translateY(-3px);
+    color: white;
+    background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%) padding-box,  linear-gradient(15deg, #13547a 0%, #80d0c7 100%) border-box;
+
+}
+
+#user-line{
+    position: relative;
+    top:-20px;
+}
+.editdiv,#editdiv,.savebtn,.editdivuser,.usereditdiv{
+    position: absolute;
+    left: 900px;
+    width:50px;
+    height: 30px;
+    border-radius: 10px;
+    outline: transparent;
+    border: 2px transparent solid;
+    background: linear-gradient(white,white) padding-box,  linear-gradient(15deg, #13547a 0%, #80d0c7 100%) border-box;
+    color: #13547a;
+    transition: transform 0.4s ease;
+}
+.editdiv:hover,#editdiv:hover,.savebtn:hover,.usereditdiv:hover{
+    transform:scale(1.15);
+    color: white;
+    background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%) padding-box,  linear-gradient(15deg, #13547a 0%, #80d0c7 100%) border-box;
+
+}
+.editdiv:focus,.savebtn:focus{
+    outline: none;
+}
+
+.savebtn{
+    position: absolute;
+    width:50px;
+    height: 30px;
+    border-radius: 10px;
+    outline: transparent;
+    border: 2px transparent solid;
+    background: linear-gradient(white,white) padding-box,  linear-gradient(15deg, #13547a 0%, #80d0c7 100%) border-box;
+    color: #13547a;
+    transition: transform 0.4s ease;
+}
+#savetext{
+    display: flex;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    margin: 3px;
+    background: linear-gradient(white,white) padding-box,  linear-gradient(15deg, #13547a 0%, #80d0c7 100%) border-box;
+    position:absolute;
+    left: 10px;
+    top:39px;
+    height:45px;
+    width:881px;
+    z-index: 2;
+}
+
+#savetext:focus{
+    outline: none;
+}
+.page-button{
+    color: #13547a;
+    border: solid 2px transparent;
+    border-radius: 10px;
+    background: linear-gradient(white,white) padding-box,  linear-gradient(15deg, #13547a 0%, #80d0c7 100%) border-box;
+    transition: transform 0.2s ease-in-out;
+}
+.page-button:hover{
+    transform: scale(1.12);
+}
+.page-button.active {
+    background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%) padding-box,  linear-gradient(15deg, #13547a 0%, #80d0c7 100%) border-box;    
+    color: white;
+}
+
+.pagination{
+    position: relative;
+    justify-self: center;
+    padding: 5px;
+}
+
+#registerbtn,#loginbtn{
+    display: flex;
+    width: 300px;
+    position: relative;
+    justify-self:center;
+    outline: transparent;
+    border: 2px transparent solid;
+    background: linear-gradient(white,white) padding-box,  linear-gradient(15deg, #13547a 0%, #80d0c7 100%) border-box;
+    color: #13547a;
+    transition: transform 0.3s ease;
+}
+#registerbtn:hover,#loginbtn:hover{
+    transform:translateY(-3px);
+    color: white;
+    background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%) padding-box,  linear-gradient(15deg, #13547a 0%, #80d0c7 100%) border-box;
+
+}
+
+input[type = text],input[type = password],input[type = email]{
+    width: 300px;
+    position: relative;
+    justify-self: center;
+    outline: transparent;
+}
+input[type = text]:focus,input[type = password]:focus,input[type = email]:focus{
+    outline: transparent;
+    border: 2px transparent solid;
+    background: linear-gradient(white,white) padding-box,  linear-gradient(15deg, #13547a 0%, #80d0c7 100%) border-box;
+    color: #13547a;
+}
+.divtext{
+    position: relative;
+    justify-self: center;
+}
+
+.signview{
+    position: relative;
+    justify-self: center;
+    outline: transparent;
+    border: 2px transparent solid;
+    border-radius: 10px;
+    background: linear-gradient(white,white) padding-box,  linear-gradient(15deg, #13547a 0%, #80d0c7 100%) border-box;
+    color: #13547a;
+    padding: 50px;
+    width: 400px;
+    background-color:rgba(255, 255, 255, .1);
+}
+.registertext{
+    padding-bottom: 10px;
+
+}
+body{
+    cursor: pointer;
+}
+.follow_text{
+    display: flex;
+    position: relative;
+    justify-self: center;
+    margin: 10px;
+    color:  #13547a;
+}
